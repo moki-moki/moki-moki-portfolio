@@ -1,0 +1,94 @@
+@use 'fonts'
+@use 'veriables'
+@use '../breakpoints'
+
+:root
+    --primary-color: #e5e4e3
+    --secondary-color: #305045
+    --text-color: #17191b
+    --overlay-opacity-color: #17191b1a
+    --nav-bg: #17191b
+    --nav-text: #e5e4e3
+    --links-hover: #E55934
+
+// DARK MODE VERIABLES
+.darkTheme
+    --primary-color: #0a0a0a
+    --text-color: #efefef
+    --nav-bg: #e5e4e3
+    --nav-text: #17191b
+    --overlay-opacity-color: #efefef1c
+
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-family: fonts.$font-primary
+
+body
+    background-color: var(--primary-color)
+    line-height: 1.6
+    overflow-x: hidden
+
+li
+    list-style: none
+
+a
+    text-decoration: none
+    color: var(--nav-text)
+    transition: veriables.$transitionSpeed ease color
+    cursor: pointer
+    &:hover
+        color: var(--links-hover)
+
+h1, h2, h3, h4, h5
+    color: var(--text-color)
+
+
+
+h1
+    font-size: fonts.$headingOne
+
+h2
+    font-size: fonts.$headingTwo
+
+h3 
+    font-size: fonts.$headingThree
+
+h4
+    font-size: fonts.$headingFour
+
+span
+    color: var(--text-color)
+
+p
+    color: var(--text-color)
+    font-size: fonts.$paragraph
+
+path
+    fill: var(--text-color)
+    stroke: var(--text-color)
+
+section
+    margin: veriables.$baseMargin
+    border: 2px solid var(--text-color)
+    position: relative
+
+@include breakpoints.sm
+    h1
+        font-size:  fonts.$headingOnePhone
+    
+    h2
+        font-size: fonts.$headingThreePhone
+
+    h3
+        font-size: fonts.$headingThreePhone
+    
+    h4
+        font-size: fonts.$headingThreePhone
+    
+    p
+        font-size: fonts.$paragraphOnPhone
+    
+    section
+        margin: 0.5em

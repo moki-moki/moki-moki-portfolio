@@ -1,0 +1,50 @@
+@use 'breakpoints'
+
+.sectionThreeMainContainer
+    display: flex
+    justify-content: space-between
+
+    .sectionThreeText
+        width: 50%
+        padding: 1em
+
+    .sectionThreeImage
+        width: 50%
+
+        .projectImage
+            width: 100%
+            height: 100%
+            object-fit: cover
+    
+    .techStackContainer
+        display: grid
+        grid-template-columns: repeat(3, minmax(140px, 200px))
+        margin-top: 10px
+
+        li
+            margin-bottom: 7px
+            position: relative
+            color: var(--text-color)
+
+            &::before
+                content: "▹"
+                display: inline-block
+                width: 15px
+                margin-right: 3px
+
+@include breakpoints.xl
+    .sectionThreeMainContainer
+        flex-direction: column-reverse
+
+        .sectionThreeText
+                width: 100%
+    
+        .sectionThreeImage
+                width: 100%
+
+        .techStackContainer
+            grid-template-columns: repeat(2, minmax(140px, 200px))
+
+@include breakpoints.sm
+    .sectionThreeText
+        padding: 0.5em

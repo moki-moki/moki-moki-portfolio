@@ -1,0 +1,72 @@
+@use 'breakpoints'
+    
+.mainLineContainer
+    position: relative
+
+.sectionTwoTittle
+    padding: 1rem
+    border-bottom: 2px solid var(--text-color)
+
+.svg
+    position: absolute
+    height: 100%
+    width: 10px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 2
+
+.sectionTwoMainContainer
+    div:last-child
+        margin: 0
+        border: none
+    
+    .projectContainer
+        display: flex
+        justify-content: space-between
+        border-bottom: 2px solid var(--text-color)
+
+    .projectDescription
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+        width: 40%
+
+        .descriptionPadding
+            padding: 0 1em
+        
+        .buttonPadding
+            padding: 0 1em
+        
+    .projectImageContainer
+        width: 50%
+        position: relative
+
+        .projectImage
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+@include breakpoints.xl
+    .projectContainer
+        flex-direction: column-reverse
+
+        .projectDescription
+            width: 100%
+
+        .projectImageContainer
+            width: 100%
+
+        .projectImage
+            border-bottom: 2px solid var(--text-color)
+
+    .svg
+        display: none
+
+
+@include breakpoints.xs
+    .descriptionPadding
+        padding: 0 0.5em
+
+    .buttonPadding
+        padding: 0 0.5em

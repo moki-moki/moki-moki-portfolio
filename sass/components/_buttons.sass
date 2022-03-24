@@ -1,0 +1,111 @@
+@use '../globals/veriables'
+@use '../globals/fonts'
+@use '../breakpoints'
+    
+button
+    background: none
+    font-size: fonts.$paragraph
+    border: 2px solid var(--text-color)
+    padding: 0.3em 0.7em
+    position: relative
+    width: fit-content
+    transition: veriables.$transitionSpeed ease transform
+    overflow: hidden
+    cursor: pointer
+    margin: 1em 0
+
+    &:hover::after
+        transform: translateY(-70px)
+
+    span
+        display: block
+        transition: 0.8s ease transform
+
+    &:hover
+        span
+            transform: translateY(-70px)
+
+.demoBtn
+    &::after
+        content: fonts.$demoText
+        position: absolute
+        left: 0
+        bottom: -70px
+        background-color: veriables.$secondary-color
+        font-weight: bold
+        color: veriables.$primary-color
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: veriables.$transitionSpeed ease transform
+            
+.codeBtn
+    &::after
+        content: fonts.$codeText
+        font-weight: bold
+        position: absolute
+        left: 0
+        bottom: -70px
+        background-color: veriables.$secondary-color
+        color: veriables.$primary-color
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: veriables.$transitionSpeed ease transform
+
+.btn
+    &::after
+        content: fonts.$learnMore
+        font-weight: bold
+        position: absolute
+        left: 0
+        bottom: -70px
+        background-color: veriables.$secondary-color
+        color: veriables.$primary-color
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: veriables.$transitionSpeed ease transform
+
+.mailBtn
+    &::after
+        content: fonts.$mailText
+        position: absolute
+        left: 0
+        font-weight: bold
+        bottom: -70px
+        background-color: veriables.$secondary-color
+        color: veriables.$primary-color
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: veriables.$transitionSpeed ease transform
+
+.github
+    &::after
+        content: fonts.$gitHub
+        position: absolute
+        left: 0
+        bottom: -70px
+        background-color: veriables.$secondary-color
+        color: veriables.$primary-color
+        font-weight: bold
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: veriables.$transitionSpeed ease transform
+
+@include breakpoints.breakpoint(452px)
+    button
+        font-size: 20px
+

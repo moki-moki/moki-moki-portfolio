@@ -1,0 +1,51 @@
+@use 'breakpoints'
+@use './globals/veriables'
+
+#one
+    padding: veriables.$basicPadding
+
+.sectionOneTextContainer
+    max-width: 70%
+
+.paralax
+    position: absolute
+    top: 20%
+    right: 5%
+    color: var(--overlay-opacity-color)
+
+.cardContainer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: row
+
+    div:nth-child(2)
+        margin: 0 1em
+
+.card
+    border: 2px dotted var(--text-color)
+    
+    p
+        padding: 0.3em
+        line-height: 1.2
+    
+    .titleContainer
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0.5em
+        border-bottom: 2px dotted var(--text-color)
+
+@include breakpoints.lg
+    .cardContainer
+        flex-direction: column
+
+        div:nth-child(2)
+            margin: 1em 0
+
+    .sectionOneTextContainer
+        max-width: 100%
+
+@include breakpoints.sm
+    #one
+        padding: 1em

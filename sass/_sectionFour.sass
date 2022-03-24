@@ -1,0 +1,47 @@
+@use 'breakpoints'
+    
+#four
+    width: auto
+    margin: 2em
+    padding: 1em
+    display: flex
+    flex-direction: column
+    
+.sectionFourContainer
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 70%
+
+    p
+        padding-bottom: 0.5em
+
+    .btnContainer
+        display: flex
+    
+    .sectionFourBtnWrapper
+        position: relative
+        display: inline-block
+        margin-top: 1em
+        margin-right: 1em
+
+@include breakpoints.md
+    .sectionFourContainer
+        width: 100%
+
+@include breakpoints.sm
+    #four
+        margin: 0.5em
+
+@include breakpoints.xs
+    .btnContainer
+        flex-direction: column
+
+        .sectionFourBtnWrapper
+            width: 100%
+            margin-top: 0
+            margin-right: 0
+
+            button
+                width: 100%
+                margin: 0.5em 0

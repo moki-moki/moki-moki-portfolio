@@ -11,6 +11,8 @@
     --nav-text: #e5e4e3
     --links-hover: #E55934
 
+    scrollbar-width: none
+
 // DARK MODE VERIABLES
 .darkTheme
     --primary-color: #0a0a0a
@@ -28,7 +30,6 @@
 body
     background-color: var(--primary-color)
     line-height: 1.6
-    overflow-x: hidden
 
 li
     list-style: none
@@ -38,6 +39,7 @@ a
     color: var(--nav-text)
     transition: veriables.$transitionSpeed ease color
     cursor: pointer
+    scroll-behavior: smooth
     &:hover
         color: var(--links-hover)
 
@@ -65,8 +67,10 @@ p
     color: var(--text-color)
     font-size: fonts.$paragraph
 
-path
+.path
     fill: var(--text-color)
+
+#path
     stroke: var(--text-color)
 
 section

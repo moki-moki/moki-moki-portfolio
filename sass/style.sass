@@ -19,6 +19,14 @@
 
 @use 'components/buttons'
 
+// Hide scroll
+
+// Hides scroll for Chrome based
+::-webkit-scrollbar
+    display: none
+    
+// Hides scroll for Firefox
+
 
 /* NAVBAR */
 nav
@@ -30,7 +38,7 @@ nav
     position: sticky
     top: 0
     background-color: var(--primary-color)
-    z-index: 3
+    z-index: 10
     transition: veriables.$transitionSpeed ease top
 
     &::before
@@ -45,14 +53,15 @@ nav
 .logoContainer
     width: 80%
     transition: veriables.$transitionSpeed ease all
+    display: flex
 
-.logo
-    color: var(--text-color)
-    transition: veriables.$transitionSpeed ease color
+.logo path
+    transition: veriables.$transitionSpeed ease stroke
+    stroke: var(--text-color)
     
 
-.logoActive
-    color: var(--nav-text)
+.logoActive path
+    stroke: var(--nav-text)
 
 /* NAVBAR BOX */
 .navLineContainer
@@ -96,7 +105,6 @@ nav
     width: 10%
 
 .toggleContainer
-    transition: veriables.$transitionSpeed ease-in-out all
     width: 60px
     height: 30px
     border: 2px solid var(--text-color)
@@ -168,3 +176,17 @@ nav
         padding: 0 0.5em
 
 
+#overlay
+    position: fixed
+    transition: 1s ease all
+    width: 100vw
+    height: 100vh
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background: var(--primary-color)
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 20
+    opacity: 1

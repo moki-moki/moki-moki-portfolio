@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <title>Portfolio</title>
   </head>
   <body>
-    <!-- CHANGE LOGO -->
     <div id="overlay">
       <svg class="sv" width="500" height="500" viewBox="0 0 66 70" fill="none">
         <path
@@ -154,7 +153,8 @@
     <div class="mainLineContainer">
       <!-- LINE IN THE MIDDLE -->
       <svg
-        width="2"
+        width="2px"
+        height="100%"
         preserveAspectRatio="xMidYMax meet"
         viewBox="0 0 3 1102"
         class="svg"
@@ -191,9 +191,15 @@
               </div>
             </div>
 
-            <div class="projectImageContainer">
-              <img class="projectImage" src="./shop.png" />
-            </div>
+            <a
+              href="https://mokimoki-mern-shop.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="projectImageContainer"
+            >
+              <img class="projectImage" data-lazy="./shop.png" />
+              <div class="block"></div>
+            </a>
           </div>
           <div class="projectContainer">
             <div class="projectDescription">
@@ -222,9 +228,15 @@
               </div>
             </div>
 
-            <div class="projectImageContainer">
-              <img class="projectImage" src="./social.png" />
-            </div>
+            <a
+              href="https://mokimoki-mern-social-media.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="projectImageContainer"
+            >
+              <img class="projectImage" data-lazy="./social.png" />
+              <div class="block"></div>
+            </a>
           </div>
 
           <div class="projectContainer">
@@ -254,9 +266,15 @@
               </div>
             </div>
 
-            <div class="projectImageContainer">
-              <img class="projectImage" src="./crypto.png" />
-            </div>
+            <a
+              href="https://dreamy-nightingale-11eba0.netlify.app/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="projectImageContainer"
+            >
+              <img class="projectImage" data-lazy="./crypto.png" />
+              <div class="block"></div>
+            </a>
           </div>
         </div>
       </section>
@@ -285,7 +303,7 @@
           <div class="sectionThreeImage">
             <img
               class="projectImage"
-              src="http://via.placeholder.com/740x360"
+              data-lazy="http://via.placeholder.com/740x360"
             />
           </div>
         </div>
@@ -320,6 +338,10 @@
         </div>
       </div>
     </section>
+
+    <div class="cursor">
+      <span class="dot"></span>
+    </div>
 
     <footer>
       <p>Designed & Developed by Me</p>

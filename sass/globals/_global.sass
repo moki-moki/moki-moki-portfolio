@@ -10,7 +10,6 @@
     --nav-bg: #17191b
     --nav-text: #e5e4e3
     --links-hover: #E55934
-
     scrollbar-width: none
 
 // DARK MODE VERIABLES
@@ -28,13 +27,15 @@
     font-family: fonts.$font-primary
     cursor: none !important
 
+html
+    scroll-behavior: smooth
 
 body
     background-color: var(--primary-color)
     line-height: 1.6
 
-    .hidden
-        overflow: hidden
+.hidden
+    overflow: hidden
 
 li
     list-style: none
@@ -50,8 +51,6 @@ a
 
 h1, h2, h3, h4, h5
     color: var(--text-color)
-
-
 
 h1
     font-size: fonts.$headingOne

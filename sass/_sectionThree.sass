@@ -10,6 +10,25 @@
 
     .sectionThreeImage
         width: 50%
+        height: 700px
+        position: relative
+
+        &::after
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%) 
+            width: 100%
+            height: 100%
+            display: block
+            background-color: var(--secondary-color)
+            opacity: 0.6
+            z-index: 2
+            transition: 0.5s ease opacity
+
+        &:hover::after
+            opacity: 0
 
         .projectImage
             width: 100%
@@ -48,3 +67,14 @@
 @include breakpoints.sm
     .sectionThreeText
         padding: 0.5em
+
+    .sectionThreeMainContainer
+
+        .sectionThreeImage
+            height: 500px
+
+@include breakpoints.xs
+    .sectionThreeMainContainer
+
+        .sectionThreeImage
+            height: 300px

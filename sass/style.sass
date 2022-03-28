@@ -24,13 +24,22 @@
 // Hides scroll for Chrome based
 ::-webkit-scrollbar
     display: none
+
+::-moz-selection
+    color: var(--text-color)
+    background: var(--secondary-color)
+
+::selection
+    color: var(--text-color)
+    background: var(--secondary-color)
+
     
 // Loading overlay
 #overlay
     position: fixed
     transition: 1.3s ease top
     width: 100vw
-    height: 100vh
+    height: 101vh
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
@@ -46,17 +55,13 @@
 // Cursor!
 .cursor
     position: fixed
-    // width: 3.5em
-    // height: 3.5em
-    width: 20px
-    height: 20px
-
-    // border: 2px solid #e55934d4
+    width: 42px
+    height: 42px
     background:#E55934D4
     border-radius: 50%
     transform: translate(-50%, -50%)
     pointer-events: none
-    transition: 0.3s ease all
+    transition: 0.3s ease transform
     transition-property: transform, background
     transform-origin: 100% 100%
     display: flex
@@ -64,16 +69,12 @@
     justify-content: center
     z-index: 11
 
-
-    // .dot
-    //     height: 4px
-    //     width: 4px
-    //     position: fixed
-    //     border-radius: 50%
-    //     // background-color: var(--text-color)
-    //     background-color: var(--primary-color)
-    //     pointer-events: none
-    //     z-index: 10
+    .cursorDot
+        transition: 0.3s ease scale
+        font-size: 10px
+        font-weight: 700
+        color: var(--text-color)
+        scale: 0
 
 /* NAVBAR */
 nav
@@ -227,4 +228,4 @@ nav
 
 
 .cursor-grow
-    transform: scale(3)
+    transform: scale(2)

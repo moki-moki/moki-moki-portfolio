@@ -7,7 +7,7 @@ var paths = document.querySelectorAll(".p"),
 
 // Overlay loading
 const overlay = document.getElementById("overlay");
-
+document.body.style.overflow = "hidden";
 // Drawing logo Loading
 (function () {
   paths.forEach((path) => {
@@ -34,6 +34,7 @@ const overlay = document.getElementById("overlay");
       path.style.stroke = "";
       path.style.strokeDasharray = "";
       overlay.style.top = "-100%";
+      document.body.style.overflow = "";
 
       setTimeout(() => {
         overlay.remove();
@@ -51,16 +52,20 @@ const navLinksWrapper = document.querySelector(".navLinkWrapper");
 const toggleThemeBtn = document.querySelector(".toggleContainer");
 const logo = document.querySelector(".logo");
 const links = document.querySelectorAll(".navLink");
+const dot = document.querySelector(".dot");
 
 // Parallax
 const target = document.querySelectorAll(".paralax");
 
 // Cursor
-const dot = document.querySelector(".dot");
 const mouseCursor = document.querySelector(".cursor");
+const cursorText = document.querySelector(".cursorDot");
 
 // Section two projce containers animation
 const blocks = document.querySelectorAll(".block");
+
+// Images container
+const imgContainer = document.querySelectorAll(".projectImageContainer");
 
 // Images
 const images = document.querySelectorAll(".projectImage");
@@ -84,10 +89,12 @@ const toggleNav = () => {
   // Stops scrolling if nav is active
   if (navBtn.classList.contains("activeNav")) {
     document.body.scroll = "no";
-    document.body.style.overflow = "hidden";
+    // document.body.style.overflow = "hidden";
+    document.body.classList.add("hidden");
   } else {
     document.body.scroll = "yes";
-    document.body.style.overflow = "unset";
+    // document.body.style.overflow = "unset";
+    document.body.classList.remove("hidden");
   }
 };
 
@@ -184,7 +191,6 @@ const lazyLoad = (target) => {
   const io = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        console.log("saw");
         const img = entry.target;
         const src = img.getAttribute("data-lazy");
 
@@ -198,30 +204,38 @@ const lazyLoad = (target) => {
   io.observe(target);
 };
 
-images.forEach(lazyLoad);
-
 // Cursor Positioning
 const cursorCircle = (e) => {
   mouseCursor.style.top = e.clientY + "px";
   mouseCursor.style.left = e.clientX + "px";
 };
 
-btns.forEach((btn) => {
-  btn.addEventListener("mouseover", () => {
+// Crusor grow on hover
+const aTags = document.querySelectorAll("a");
+
+aTags.forEach((link) => {
+  link.addEventListener("mouseover", () => {
     mouseCursor.classList.add("cursor-grow");
+    cursorText.style.scale = 1;
   });
 
-  btn.addEventListener("mouseleave", () => {
+  link.addEventListener("mouseleave", () => {
     mouseCursor.classList.remove("cursor-grow");
+    cursorText.style.scale = 0;
   });
 });
 
-/* LISTENERS */
+/* FUNCTION CALLS */
 
 // Move cursor
 window.addEventListener("mousemove", cursorCircle);
+
 // Navbar toggle
 navBtn.addEventListener("click", toggleNav);
 toggleThemeBtn.addEventListener("click", toggleTheme);
+
 // Text parallax
 window.addEventListener("scroll", parallax);
+
+// Lazy load images
+images.forEach(lazyLoad);

@@ -1,390 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" type="image/x-icon" href="/Icon.png">
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <div id="overlay">
-      <svg class="sv" width="500" height="500" viewBox="0 0 66 70" fill="none">
-        <path
-          class="p"
-          d="M2 3.88574V66.1143"
-          stroke="#1F1F1F"
-          stroke-width="4"
-        />
-        <path
-          class="p"
-          d="M64 3.88574V66.1143"
-          stroke="#1F1F1F"
-          stroke-width="4"
-        />
-        <path class="p" d="M0 68H66" stroke="#1F1F1F" stroke-width="4" />
-        <path class="p" d="M0 2H66" stroke="#1F1F1F" stroke-width="4" />
-        <path
-          d="M4 66L18.6198 38.5M62 66L47.6198 38.5M47.6198 38.5L33.2397 11L18.6198 38.5M47.6198 38.5H18.6198"
-          stroke="#1F1F1F"
-          stroke-width="4"
-          class="p"
-        />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" type="image/x-icon" href="/Icon.png">
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <div id="overlay">
+    <svg class="sv" width="500" height="500" viewBox="0 0 66 70" fill="none">
+      <path class="p" d="M2 3.88574V66.1143" stroke="#1F1F1F" stroke-width="4" />
+      <path class="p" d="M64 3.88574V66.1143" stroke="#1F1F1F" stroke-width="4" />
+      <path class="p" d="M0 68H66" stroke="#1F1F1F" stroke-width="4" />
+      <path class="p" d="M0 2H66" stroke="#1F1F1F" stroke-width="4" />
+      <path d="M4 66L18.6198 38.5M62 66L47.6198 38.5M47.6198 38.5L33.2397 11L18.6198 38.5M47.6198 38.5H18.6198"
+        stroke="#1F1F1F" stroke-width="4" class="p" />
+    </svg>
+  </div>
+  <!-- NAVBAR -->
+  <nav>
+    <!-- nav logo -->
+    <div class="logoContainer">
+      <svg class="logo" width="55" height="55" viewBox="0 0 66 70" fill="none">
+        <path d="M2 3.88574V66.1143" stroke="#1F1F1F" stroke-width="5" />
+        <path d="M64 3.88574V66.1143" stroke="#1F1F1F" stroke-width="5" />
+        <path d="M0 68H66" stroke="#1F1F1F" stroke-width="5" />
+        <path d="M0 2H66" stroke="#1F1F1F" stroke-width="5" />
+        <path d="M4 66L18.6198 38.5M62 66L47.6198 38.5M47.6198 38.5L33.2397 11L18.6198 38.5M47.6198 38.5H18.6198"
+          stroke="#1F1F1F" stroke-width="5" />
       </svg>
     </div>
-    <!-- NAVBAR -->
-    <nav>
-      <!-- nav logo -->
-      <div class="logoContainer">
-        <svg
-          class="logo"
-          width="55"
-          height="55"
-          viewBox="0 0 66 70"
-          fill="none"
-        >
-          <path d="M2 3.88574V66.1143" stroke="#1F1F1F" stroke-width="5" />
-          <path d="M64 3.88574V66.1143" stroke="#1F1F1F" stroke-width="5" />
-          <path d="M0 68H66" stroke="#1F1F1F" stroke-width="5" />
-          <path d="M0 2H66" stroke="#1F1F1F" stroke-width="5" />
-          <path
-            d="M4 66L18.6198 38.5M62 66L47.6198 38.5M47.6198 38.5L33.2397 11L18.6198 38.5M47.6198 38.5H18.6198"
-            stroke="#1F1F1F"
-            stroke-width="5"
-          />
-        </svg>
+    <div class="toggleWrapper">
+      <span class="toggleContainer">
+        <div class="dot"></div>
+      </span>
+    </div>
+    <div>
+      <div class="navLineContainer">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
       </div>
-      <div class="toggleWrapper">
-        <span class="toggleContainer">
-          <div class="dot"></div>
-        </span>
+    </div>
+
+    <!-- NAV LINKS -->
+    <ul class="navLinkWrapper">
+      <li><a class="navLink" href="#one">Home</a></li>
+      <li><a class="navLink" href="#two">Work</a></li>
+      <li><a class="navLink" href="#three">About</a></li>
+      <li><a class="navLink" href="#four">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- sections -->
+  <section id="one">
+    <div class="mainSectionContainer">
+      <h1 class="title">Invision Develop</h1>
+      <h1 class="title">& Realize</h1>
+
+      <div class="sectionOneTextContainer">
+        <p>
+          I'm a Web Developer mainly focused on building app's, unique UI/UX,
+          fixing bugs and maintaining. Currently, I'm working as a freelancer
+          and looking for a full time job.
+        </p>
       </div>
-      <div>
-        <div class="navLineContainer">
-          <span class="line line1"></span>
-          <span class="line line2"></span>
+
+      <a href="#two" class="sectionOneBtnContainer">
+        <button class="btn"><span>Learn More</span></button>
+      </a>
+    </div>
+    <!-- CARDS SECTION 1 -->
+    <div class="cardContainer">
+      <div class="card">
+        <div class="titleContainer">
+          <h4>Planning</h4>
+          <svg width="50" height="50" viewBox="0 0 89 89" fill="none">
+            <path
+              d="M42.145 80.0768H14.0483C12.8064 80.0768 11.6153 79.6081 10.7371 78.7738C9.85893 77.9395 9.36556 76.8079 9.36556 75.6281V13.3461C9.36556 12.1663 9.85893 11.0347 10.7371 10.2004C11.6153 9.36612 12.8064 8.89742 14.0483 8.89742H37.4622V22.2436C37.4622 25.7832 38.9423 29.1778 41.5769 31.6807C44.2115 34.1836 47.7847 35.5897 51.5106 35.5897H65.5589V57.8332C65.5589 59.0131 66.0523 60.1447 66.9305 60.9789C67.8087 61.8132 68.9998 62.2819 70.2417 62.2819C71.4837 62.2819 72.6748 61.8132 73.5529 60.9789C74.4311 60.1447 74.9245 59.0131 74.9245 57.8332V31.141C74.9245 31.141 74.9245 31.141 74.9245 30.874C74.8757 30.4654 74.7815 30.0627 74.6435 29.6729V29.2725C74.4184 28.8151 74.118 28.3946 73.7538 28.0269V28.0269L45.6571 1.33461C45.27 0.988575 44.8274 0.703256 44.3459 0.489358C44.191 0.463597 44.0326 0.463597 43.8777 0.489358C43.4223 0.258039 42.933 0.0930759 42.426 0H14.0483C10.3225 0 6.74924 1.40611 4.11467 3.90899C1.48009 6.41188 0 9.80652 0 13.3461V75.6281C0 79.1677 1.48009 82.5623 4.11467 85.0652C6.74924 87.5681 10.3225 88.9742 14.0483 88.9742H42.145C43.387 88.9742 44.5781 88.5055 45.4563 87.6712C46.3344 86.8369 46.8278 85.7054 46.8278 84.5255C46.8278 83.3456 46.3344 82.2141 45.4563 81.3798C44.5781 80.5455 43.387 80.0768 42.145 80.0768ZM46.8278 15.1701L58.9562 26.6923H51.5106C50.2686 26.6923 49.0776 26.2236 48.1994 25.3893C47.3212 24.555 46.8278 23.4234 46.8278 22.2436V15.1701ZM23.4139 53.3845H51.5106C52.7525 53.3845 53.9436 52.9158 54.8218 52.0815C55.7 51.2472 56.1934 50.1157 56.1934 48.9358C56.1934 47.7559 55.7 46.6244 54.8218 45.7901C53.9436 44.9558 52.7525 44.4871 51.5106 44.4871H23.4139C22.172 44.4871 20.9809 44.9558 20.1027 45.7901C19.2245 46.6244 18.7311 47.7559 18.7311 48.9358C18.7311 50.1157 19.2245 51.2472 20.1027 52.0815C20.9809 52.9158 22.172 53.3845 23.4139 53.3845ZM42.145 62.2819H23.4139C22.172 62.2819 20.9809 62.7506 20.1027 63.5849C19.2245 64.4192 18.7311 65.5508 18.7311 66.7307C18.7311 67.9105 19.2245 69.0421 20.1027 69.8764C20.9809 70.7107 22.172 71.1794 23.4139 71.1794H42.145C43.387 71.1794 44.5781 70.7107 45.4563 69.8764C46.3344 69.0421 46.8278 67.9105 46.8278 66.7307C46.8278 65.5508 46.3344 64.4192 45.4563 63.5849C44.5781 62.7506 43.387 62.2819 42.145 62.2819ZM23.4139 35.5897H28.0967C29.3386 35.5897 30.5297 35.121 31.4079 34.2867C32.2861 33.4524 32.7795 32.3208 32.7795 31.141C32.7795 29.9611 32.2861 28.8296 31.4079 27.9953C30.5297 27.161 29.3386 26.6923 28.0967 26.6923H23.4139C22.172 26.6923 20.9809 27.161 20.1027 27.9953C19.2245 28.8296 18.7311 29.9611 18.7311 31.141C18.7311 32.3208 19.2245 33.4524 20.1027 34.2867C20.9809 35.121 22.172 35.5897 23.4139 35.5897ZM87.6148 63.5721C87.1795 63.1551 86.6616 62.8241 86.091 62.5983C85.5203 62.3724 84.9082 62.2562 84.2901 62.2562C83.6719 62.2562 83.0598 62.3724 82.4892 62.5983C81.9185 62.8241 81.4006 63.1551 80.9653 63.5721L65.5589 78.2528L59.5181 72.4695C59.0815 72.0547 58.5632 71.7257 57.9927 71.5012C57.4223 71.2767 56.8108 71.1612 56.1934 71.1612C55.5759 71.1612 54.9645 71.2767 54.394 71.5012C53.8236 71.7257 53.3052 72.0547 52.8686 72.4695C52.432 72.8843 52.0856 73.3767 51.8493 73.9187C51.6131 74.4606 51.4914 75.0415 51.4914 75.6281C51.4914 76.2147 51.6131 76.7955 51.8493 77.3375C52.0856 77.8794 52.432 78.3719 52.8686 78.7867L62.2342 87.6841C62.6695 88.101 63.1874 88.432 63.758 88.6579C64.3287 88.8837 64.9408 89 65.5589 89C66.1771 89 66.7892 88.8837 67.3598 88.6579C67.9305 88.432 68.4484 88.101 68.8837 87.6841L87.6148 69.8892C88.0537 69.4757 88.4021 68.9836 88.6399 68.4415C88.8776 67.8994 89 67.3179 89 66.7307C89 66.1434 88.8776 65.5619 88.6399 65.0198C88.4021 64.4777 88.0537 63.9856 87.6148 63.5721V63.5721Z"
+              class="path" />
+          </svg>
+        </div>
+        <p>
+          Planning out the design and implementation of certain functionalities.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="titleContainer">
+          <h4>Structure</h4>
+
+          <svg width="50" height="50" viewBox="0 0 89 89" fill="none">
+            <path
+              d="M84.9545 56.6364H76.8636V44.5C76.8636 43.4271 76.4374 42.3981 75.6788 41.6394C74.9201 40.8808 73.8911 40.4545 72.8182 40.4545H48.5455V32.3636H56.6364C57.7093 32.3636 58.7383 31.9374 59.4969 31.1787C60.2556 30.4201 60.6818 29.3911 60.6818 28.3182V4.04545C60.6818 2.97253 60.2556 1.94356 59.4969 1.18489C58.7383 0.426216 57.7093 0 56.6364 0H32.3636C31.2907 0 30.2617 0.426216 29.5031 1.18489C28.7444 1.94356 28.3182 2.97253 28.3182 4.04545V28.3182C28.3182 29.3911 28.7444 30.4201 29.5031 31.1787C30.2617 31.9374 31.2907 32.3636 32.3636 32.3636H40.4545V40.4545H16.1818C15.1089 40.4545 14.0799 40.8808 13.3213 41.6394C12.5626 42.3981 12.1364 43.4271 12.1364 44.5V56.6364H4.04545C2.97253 56.6364 1.94356 57.0626 1.18489 57.8212C0.426216 58.5799 0 59.6089 0 60.6818V84.9545C0 86.0275 0.426216 87.0564 1.18489 87.8151C1.94356 88.5738 2.97253 89 4.04545 89H28.3182C29.3911 89 30.4201 88.5738 31.1787 87.8151C31.9374 87.0564 32.3636 86.0275 32.3636 84.9545V60.6818C32.3636 59.6089 31.9374 58.5799 31.1787 57.8212C30.4201 57.0626 29.3911 56.6364 28.3182 56.6364H20.2273V48.5455H68.7727V56.6364H60.6818C59.6089 56.6364 58.5799 57.0626 57.8212 57.8212C57.0626 58.5799 56.6364 59.6089 56.6364 60.6818V84.9545C56.6364 86.0275 57.0626 87.0564 57.8212 87.8151C58.5799 88.5738 59.6089 89 60.6818 89H84.9545C86.0275 89 87.0564 88.5738 87.8151 87.8151C88.5738 87.0564 89 86.0275 89 84.9545V60.6818C89 59.6089 88.5738 58.5799 87.8151 57.8212C87.0564 57.0626 86.0275 56.6364 84.9545 56.6364ZM24.2727 64.7273V80.9091H8.09091V64.7273H24.2727ZM36.4091 24.2727V8.09091H52.5909V24.2727H36.4091ZM80.9091 80.9091H64.7273V64.7273H80.9091V80.9091Z"
+              class="path" />
+          </svg>
+        </div>
+        <p>Creating underlying structure needed for future development</p>
+      </div>
+      <div class="card">
+        <div class="titleContainer">
+          <h4>Development</h4>
+          <svg width="50" height="50" viewBox="0 0 89 115" fill="none">
+            <path
+              d="M85.3807 55.3591C85.4043 55.1689 85.4043 54.9767 85.3807 54.7866C80.9584 44.6055 72.592 36.492 62.0627 32.1735V11.4497H67.996C69.5696 11.4497 71.0788 10.8465 72.1915 9.77289C73.3042 8.69928 73.9293 7.24315 73.9293 5.72483C73.9293 4.20651 73.3042 2.75038 72.1915 1.67676C71.0788 0.603149 69.5696 0 67.996 0H20.5293C18.9557 0 17.4466 0.603149 16.3338 1.67676C15.2211 2.75038 14.596 4.20651 14.596 5.72483C14.596 7.24315 15.2211 8.69928 16.3338 9.77289C17.4466 10.8465 18.9557 11.4497 20.5293 11.4497H26.4627V32.1735C15.9671 36.6085 7.6841 44.8264 3.38201 55.0728C3.35838 55.263 3.35838 55.4552 3.38201 55.6453C0.584092 62.1685 -0.503578 69.2568 0.215322 76.2824C0.934222 83.308 3.43751 90.0541 7.50351 95.9235C11.5695 101.793 17.0728 106.604 23.5259 109.932C29.9791 113.259 37.1831 115 44.5 115C51.8169 115 59.0209 113.259 65.4741 109.932C71.9272 106.604 77.4305 101.793 81.4965 95.9235C85.5625 90.0541 88.0658 83.308 88.7847 76.2824C89.5036 69.2568 88.4159 62.1685 85.618 55.6453L85.3807 55.3591ZM34.2353 41.5622C35.4249 41.188 36.4614 40.4605 37.1967 39.4837C37.932 38.5069 38.3284 37.3309 38.3293 36.1237V11.4497H50.196V36.1237C50.1969 37.3309 50.5934 38.5069 51.3286 39.4837C52.0639 40.4605 53.1004 41.188 54.29 41.5622C60.2044 43.4102 65.4384 46.8697 69.3607 51.5234H19.1647C23.087 46.8697 28.3209 43.4102 34.2353 41.5622V41.5622ZM44.2627 103.047C35.6126 103.032 27.3213 99.7096 21.2047 93.808C15.0882 87.9064 11.645 79.9064 11.6293 71.5603C11.639 68.6526 12.0785 65.761 12.9347 62.9731H75.5907C76.4468 65.761 76.8864 68.6526 76.896 71.5603C76.8803 79.9064 73.4371 87.9064 67.3206 93.808C61.2041 99.7096 52.9127 103.032 44.2627 103.047V103.047ZM56.1293 80.1476C54.9558 80.1476 53.8087 80.4833 52.8329 81.1124C51.8572 81.7414 51.0967 82.6355 50.6476 83.6816C50.1986 84.7277 50.0811 85.8788 50.31 86.9893C50.5389 88.0998 51.104 89.1198 51.9338 89.9205C52.7636 90.7211 53.8208 91.2663 54.9718 91.4872C56.1228 91.7081 57.3157 91.5948 58.3999 91.1615C59.4841 90.7282 60.4108 89.9944 61.0627 89.0529C61.7147 88.1115 62.0627 87.0047 62.0627 85.8724C62.0627 84.3541 61.4375 82.8979 60.3248 81.8243C59.2121 80.7507 57.7029 80.1476 56.1293 80.1476ZM32.396 74.4227C31.2225 74.4227 30.0754 74.7585 29.0996 75.3876C28.1239 76.0166 27.3634 76.9107 26.9143 77.9568C26.4652 79.0029 26.3477 80.1539 26.5767 81.2644C26.8056 82.3749 27.3707 83.395 28.2005 84.1956C29.0303 84.9963 30.0875 85.5415 31.2385 85.7624C32.3894 85.9833 33.5824 85.8699 34.6666 85.4366C35.7508 85.0033 36.6774 84.2696 37.3294 83.3281C37.9814 82.3867 38.3293 81.2798 38.3293 80.1476C38.3293 78.6293 37.7042 77.1731 36.5915 76.0995C35.4788 75.0259 33.9696 74.4227 32.396 74.4227Z"
+              class="path" />
+          </svg>
+        </div>
+        <p>Developing all the app's features and test for bugs.</p>
+      </div>
+    </div>
+    <!-- paralax heading -->
+    <h1 class="paralax" data-rate=".2" data-direction="vertical">
+      < Hello World />
+    </h1>
+  </section>
+
+  <!-- SECTION TWO -->
+
+  <div class="mainLineContainer">
+    <!-- LINE IN THE MIDDLE -->
+    <svg width="2px" height="100%" preserveAspectRatio="xMidYMax meet" viewBox="0 0 3 1102" class="svg">
+      <path id="path" d="M1.5 0V1102" stroke="#17191b" stroke-width="1" />
+    </svg>
+    <section id="two">
+      <div class="sectionTwoMainContainer">
+        <h1 class="sectionTwoTittle">My Work</h1>
+        <!-- SECTION TWO PROJECTS -->
+        <div class="projectContainer">
+          <div class="projectDescription">
+            <div class="descriptionPadding">
+              <div class="container">
+                <h3>E-Commerce</h3>
+                <div class="block"></div>
+              </div>
+              <div class="container">
+                <p>
+                  This project is made with MERN stack, its purpose was to emulate functionality of an online shop. It
+                  has fully functional cart, wishlist, filtering, sorting, authentication, adding products as an admin,
+                  etc…
+                </p>
+                <ul class="techStack">
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>Tailwind</li>
+                  <li>NodeJs</li>
+                  <li>JWT</li>
+                  <li>MongoDB</li>
+                </ul>
+                <div class="block"></div>
+              </div>
+            </div>
+            <div class="buttonPadding">
+              <a target="_blank" rel="noreferrer noopener" href="https://github.com/moki-moki/mern-shop"
+                class="sectionOneBtnContainer">
+                <button class="codeBtn"><span>
+                    < Code >
+                  </span></button>
+              </a>
+              <a target="_blank" rel="noreferrer noopener" href="https://mokimoki-mern-shop.herokuapp.com/"
+                class="sectionOneBtnContainer">
+                <button class="demoBtn"><span>
+                    < Demo >
+                  </span></button>
+              </a>
+            </div>
+          </div>
+
+          <a href="https://mokimoki-mern-shop.herokuapp.com/" target="_blank" rel="noreferrer noopener"
+            class="projectImageContainer">
+            <img class="projectImage" data-lazy="./shop.png" />
+            <div class="block"></div>
+          </a>
+        </div>
+        <div class="projectContainer">
+          <div class="projectDescription">
+            <div class="descriptionPadding">
+              <div class="container">
+                <h3>Social Media</h3>
+                <div class="block"></div>
+              </div>
+              <div class="container">
+                <div class="block"></div>
+                <p>
+                  Social Media app built with MERN stack. It mimics functionality of a social media, leting you like,
+                  dislike, comment, change username, create posts, delete posts, etc...
+                </p>
+
+                <ul class="techStack">
+                  <li>React</li>
+                  <li>Context</li>
+                  <li>NodeJs</li>
+                  <li>MongoDB</li>
+                  <li>JWT</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="buttonPadding">
+              <a href="https://github.com/moki-moki/react-social-media" target="_blank" rel="noreferrer noopener"
+                class="sectionOneBtnContainer">
+                <button class="codeBtn"><span>
+                    < Code >
+                  </span></button>
+              </a>
+              <a href="https://mokimoki-mern-social-media.herokuapp.com/" target="_blank" rel="noreferrer noopener"
+                class="sectionOneBtnContainer">
+                <button class="demoBtn"><span>
+                    < Demo >
+                  </span></button>
+              </a>
+            </div>
+          </div>
+
+          <a href="https://mokimoki-mern-social-media.herokuapp.com/" target="_blank" rel="noreferrer noopener"
+            class="projectImageContainer">
+            <img class="projectImage" data-lazy="./social.png" />
+            <div class="block"></div>
+          </a>
+        </div>
+
+        <div class="projectContainer">
+          <div class="projectDescription">
+            <div class="descriptionPadding">
+              <div class="container">
+                <h3>Crypto Tracker</h3>
+                <div class="block"></div>
+              </div>
+              <div class="container">
+                <div class="block"></div>
+
+                <p>
+                  Front-end only project in which I've used <a class="details" href="https://www.chartjs.org/"
+                    target="_blank" rel="noreferrer noopener"><span>Chart.js</span></a> for data visualization, <a
+                    class="details" href="https://www.coingecko.com/en/api" target="_blank"
+                    rel="noreferrer noopener"><span>CoinGecko</span></a> API and <a class="details" target="_blank"
+                    rel="noreferrer noopener" href="https://axios-http.com/"><span>Axios</span></a> for my HTTP calls.
+                  This project tracks crypto and displays data via text and chart. Also, a small google keeps clone is
+                  integrated in it. You can post/edit/delete notes.
+                </p>
+                <ul class="techStack">
+                  <li>React</li>
+                  <li>CSS</li>
+                  <li>Axios</li>
+
+              </div>
+            </div>
+            <div class="buttonPadding">
+              <a href="https://github.com/moki-moki/react-crypto-tracker" target="_blank" rel="noreferrer noopener"
+                class="sectionOneBtnContainer">
+                <button class="codeBtn"><span>
+                    < Code >
+                  </span></button>
+              </a>
+              <a href="https://dreamy-nightingale-11eba0.netlify.app/" target="_blank" rel="noreferrer noopener"
+                class="sectionOneBtnContainer">
+                <button class="demoBtn"><span>
+                    < Demo >
+                  </span></button>
+              </a>
+            </div>
+          </div>
+
+          <a href="https://dreamy-nightingale-11eba0.netlify.app/" target="_blank" rel="noreferrer noopener"
+            class="projectImageContainer">
+            <img class="projectImage" data-lazy="./crypto.png" />
+            <div class="block"></div>
+          </a>
         </div>
       </div>
-
-      <!-- NAV LINKS -->
-      <ul class="navLinkWrapper">
-        <li><a class="navLink" href="#one">Home</a></li>
-        <li><a class="navLink" href="#two">Work</a></li>
-        <li><a class="navLink" href="#three">About</a></li>
-        <li><a class="navLink" href="#four">Contact</a></li>
-      </ul>
-    </nav>
-    <!-- sections -->
-    <section id="one">
-      <div class="mainSectionContainer">
-        <h1 class="title">Invision Develop</h1>
-        <h1 class="title">& Realize</h1>
-
-        <div class="sectionOneTextContainer">
+    </section>
+    <section id="three">
+      <h1 class="sectionTwoTittle">About</h1>
+      <div class="sectionThreeMainContainer">
+        <div class="sectionThreeText">
           <p>
-            I'm a Web Developer mainly focused on building app's, unique UI/UX,
-            fixing bugs and maintaining. Currently, I'm working as a freelancer
-            and looking for a full time job.
+Hello! My name is Aleksa, and I'm a self-taught programmer, mainly focused on Web Development. What mainly started as a hobby teaching myself HTML / CSS through tutorials and documentation quickly tunerd into a year of learning and constantly self improving whitch continues to this day. I mainly dabble in Web development, but I open to learning any tehnologies needed, every tech has it's ups and downs.
           </p>
+          <ul class="techStackContainer">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>React</li>
+            <li>NodeJS</li>
+            <li>MongoDB</li>
+          </ul>
         </div>
+        <div class="sectionThreeImage">
+          <img class="projectImage" data-lazy="./pfp.jpg" />
+        </div>
+      </div>
+    </section>
+  </div>
 
-        <a href="#two" class="sectionOneBtnContainer">
-          <button class="btn"><span>Learn More</span></button>
+  <!-- SECTION FOUR -->
+  <section id="four">
+    <h1 class="title">Get in touch</h1>
+    <div class="sectionFourContainer">
+      <p>
+I'm currently looking for a full-time job. My inbox is always open whether you have any questions or just want to say hi.
+      </p>
+      <div class="btnContainer">
+        <a class="sectionFourBtnWrapper" href="mailto:alexloremipsum@gmail.com">
+          <button class="mailBtn"><span>
+              < Get in touch >
+            </span></button>
+        </a>
+        <a target="_blank" rel="noreferrer noopener" href="https://github.com/moki-moki" class="sectionFourBtnWrapper">
+          <button class="btn">
+            <span>Github
+              <svg width="20" height="20" viewBox="0 0 89 89" fill="none">
+                <path
+                  d="M44.4998 0C33.9333 0.000449253 23.7116 3.85587 15.6639 10.8764C7.6161 17.897 2.26739 27.6245 0.57476 38.3185C-1.11786 49.0125 0.956054 59.9751 6.42543 69.2447C11.8948 78.5143 20.4027 85.4862 30.4269 88.9127C32.6519 89.312 33.4862 87.9432 33.4862 86.7454C33.4862 85.6619 33.4306 82.0688 33.4306 78.2477C22.25 80.3579 19.3575 75.4533 18.4675 72.8869C17.4799 70.3908 15.9144 68.1789 13.9063 66.4421C12.3488 65.5867 10.1238 63.4765 13.8506 63.4195C15.2736 63.5779 16.6385 64.0856 17.8295 64.8996C19.0205 65.7137 20.0026 66.8101 20.6925 68.096C21.3011 69.217 22.1195 70.2039 23.1008 71.0001C24.082 71.7962 25.2069 72.3861 26.4108 72.7357C27.6148 73.0854 28.8742 73.188 30.117 73.0378C31.3597 72.8875 32.5613 72.4873 33.6529 71.8601C33.8456 69.5406 34.8538 67.3719 36.4899 65.7579C26.5887 64.6173 16.2425 60.6819 16.2425 43.2303C16.18 38.6958 17.8119 34.3086 20.8037 30.9684C19.4433 27.0274 19.6025 22.7024 21.2487 18.8777C21.2487 18.8777 24.9754 17.68 33.4861 23.5543C40.7676 21.501 48.4545 21.501 55.736 23.5543C64.2465 17.623 67.9734 18.8777 67.9734 18.8777C69.6199 22.7024 69.7791 27.0274 68.4184 30.9684C71.4192 34.3029 73.0526 38.6939 72.9796 43.2303C72.9796 60.739 62.5777 64.6173 52.6766 65.7579C53.7386 66.8615 54.5565 68.1865 55.0748 69.6429C55.5931 71.0994 55.7996 72.6531 55.6804 74.1986C55.6804 80.3011 55.6247 85.2057 55.6247 86.7456C55.6247 87.9433 56.4591 89.3691 58.684 88.9128C68.6905 85.4584 77.174 78.4702 82.6201 69.1959C88.0662 59.9215 90.1204 48.9645 88.416 38.2809C86.7117 27.5972 81.3597 17.8823 73.3154 10.8703C65.2712 3.85832 55.0583 0.00563433 44.4998 0V0Z"
+                  class="path" />
+              </svg>
+            </span>
+          </button>
         </a>
       </div>
-      <!-- CARDS SECTION 1 -->
-      <div class="cardContainer">
-        <div class="card">
-          <div class="titleContainer">
-            <h4>Planning</h4>
-            <svg width="50" height="50" viewBox="0 0 89 89" fill="none">
-              <path
-                d="M42.145 80.0768H14.0483C12.8064 80.0768 11.6153 79.6081 10.7371 78.7738C9.85893 77.9395 9.36556 76.8079 9.36556 75.6281V13.3461C9.36556 12.1663 9.85893 11.0347 10.7371 10.2004C11.6153 9.36612 12.8064 8.89742 14.0483 8.89742H37.4622V22.2436C37.4622 25.7832 38.9423 29.1778 41.5769 31.6807C44.2115 34.1836 47.7847 35.5897 51.5106 35.5897H65.5589V57.8332C65.5589 59.0131 66.0523 60.1447 66.9305 60.9789C67.8087 61.8132 68.9998 62.2819 70.2417 62.2819C71.4837 62.2819 72.6748 61.8132 73.5529 60.9789C74.4311 60.1447 74.9245 59.0131 74.9245 57.8332V31.141C74.9245 31.141 74.9245 31.141 74.9245 30.874C74.8757 30.4654 74.7815 30.0627 74.6435 29.6729V29.2725C74.4184 28.8151 74.118 28.3946 73.7538 28.0269V28.0269L45.6571 1.33461C45.27 0.988575 44.8274 0.703256 44.3459 0.489358C44.191 0.463597 44.0326 0.463597 43.8777 0.489358C43.4223 0.258039 42.933 0.0930759 42.426 0H14.0483C10.3225 0 6.74924 1.40611 4.11467 3.90899C1.48009 6.41188 0 9.80652 0 13.3461V75.6281C0 79.1677 1.48009 82.5623 4.11467 85.0652C6.74924 87.5681 10.3225 88.9742 14.0483 88.9742H42.145C43.387 88.9742 44.5781 88.5055 45.4563 87.6712C46.3344 86.8369 46.8278 85.7054 46.8278 84.5255C46.8278 83.3456 46.3344 82.2141 45.4563 81.3798C44.5781 80.5455 43.387 80.0768 42.145 80.0768ZM46.8278 15.1701L58.9562 26.6923H51.5106C50.2686 26.6923 49.0776 26.2236 48.1994 25.3893C47.3212 24.555 46.8278 23.4234 46.8278 22.2436V15.1701ZM23.4139 53.3845H51.5106C52.7525 53.3845 53.9436 52.9158 54.8218 52.0815C55.7 51.2472 56.1934 50.1157 56.1934 48.9358C56.1934 47.7559 55.7 46.6244 54.8218 45.7901C53.9436 44.9558 52.7525 44.4871 51.5106 44.4871H23.4139C22.172 44.4871 20.9809 44.9558 20.1027 45.7901C19.2245 46.6244 18.7311 47.7559 18.7311 48.9358C18.7311 50.1157 19.2245 51.2472 20.1027 52.0815C20.9809 52.9158 22.172 53.3845 23.4139 53.3845ZM42.145 62.2819H23.4139C22.172 62.2819 20.9809 62.7506 20.1027 63.5849C19.2245 64.4192 18.7311 65.5508 18.7311 66.7307C18.7311 67.9105 19.2245 69.0421 20.1027 69.8764C20.9809 70.7107 22.172 71.1794 23.4139 71.1794H42.145C43.387 71.1794 44.5781 70.7107 45.4563 69.8764C46.3344 69.0421 46.8278 67.9105 46.8278 66.7307C46.8278 65.5508 46.3344 64.4192 45.4563 63.5849C44.5781 62.7506 43.387 62.2819 42.145 62.2819ZM23.4139 35.5897H28.0967C29.3386 35.5897 30.5297 35.121 31.4079 34.2867C32.2861 33.4524 32.7795 32.3208 32.7795 31.141C32.7795 29.9611 32.2861 28.8296 31.4079 27.9953C30.5297 27.161 29.3386 26.6923 28.0967 26.6923H23.4139C22.172 26.6923 20.9809 27.161 20.1027 27.9953C19.2245 28.8296 18.7311 29.9611 18.7311 31.141C18.7311 32.3208 19.2245 33.4524 20.1027 34.2867C20.9809 35.121 22.172 35.5897 23.4139 35.5897ZM87.6148 63.5721C87.1795 63.1551 86.6616 62.8241 86.091 62.5983C85.5203 62.3724 84.9082 62.2562 84.2901 62.2562C83.6719 62.2562 83.0598 62.3724 82.4892 62.5983C81.9185 62.8241 81.4006 63.1551 80.9653 63.5721L65.5589 78.2528L59.5181 72.4695C59.0815 72.0547 58.5632 71.7257 57.9927 71.5012C57.4223 71.2767 56.8108 71.1612 56.1934 71.1612C55.5759 71.1612 54.9645 71.2767 54.394 71.5012C53.8236 71.7257 53.3052 72.0547 52.8686 72.4695C52.432 72.8843 52.0856 73.3767 51.8493 73.9187C51.6131 74.4606 51.4914 75.0415 51.4914 75.6281C51.4914 76.2147 51.6131 76.7955 51.8493 77.3375C52.0856 77.8794 52.432 78.3719 52.8686 78.7867L62.2342 87.6841C62.6695 88.101 63.1874 88.432 63.758 88.6579C64.3287 88.8837 64.9408 89 65.5589 89C66.1771 89 66.7892 88.8837 67.3598 88.6579C67.9305 88.432 68.4484 88.101 68.8837 87.6841L87.6148 69.8892C88.0537 69.4757 88.4021 68.9836 88.6399 68.4415C88.8776 67.8994 89 67.3179 89 66.7307C89 66.1434 88.8776 65.5619 88.6399 65.0198C88.4021 64.4777 88.0537 63.9856 87.6148 63.5721V63.5721Z"
-                class="path"
-              />
-            </svg>
-          </div>
-          <p>
-Planning out the design and implementation of certain functionalities.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="titleContainer">
-            <h4>Structure</h4>
-
-            <svg width="50" height="50" viewBox="0 0 89 89" fill="none">
-              <path
-                d="M84.9545 56.6364H76.8636V44.5C76.8636 43.4271 76.4374 42.3981 75.6788 41.6394C74.9201 40.8808 73.8911 40.4545 72.8182 40.4545H48.5455V32.3636H56.6364C57.7093 32.3636 58.7383 31.9374 59.4969 31.1787C60.2556 30.4201 60.6818 29.3911 60.6818 28.3182V4.04545C60.6818 2.97253 60.2556 1.94356 59.4969 1.18489C58.7383 0.426216 57.7093 0 56.6364 0H32.3636C31.2907 0 30.2617 0.426216 29.5031 1.18489C28.7444 1.94356 28.3182 2.97253 28.3182 4.04545V28.3182C28.3182 29.3911 28.7444 30.4201 29.5031 31.1787C30.2617 31.9374 31.2907 32.3636 32.3636 32.3636H40.4545V40.4545H16.1818C15.1089 40.4545 14.0799 40.8808 13.3213 41.6394C12.5626 42.3981 12.1364 43.4271 12.1364 44.5V56.6364H4.04545C2.97253 56.6364 1.94356 57.0626 1.18489 57.8212C0.426216 58.5799 0 59.6089 0 60.6818V84.9545C0 86.0275 0.426216 87.0564 1.18489 87.8151C1.94356 88.5738 2.97253 89 4.04545 89H28.3182C29.3911 89 30.4201 88.5738 31.1787 87.8151C31.9374 87.0564 32.3636 86.0275 32.3636 84.9545V60.6818C32.3636 59.6089 31.9374 58.5799 31.1787 57.8212C30.4201 57.0626 29.3911 56.6364 28.3182 56.6364H20.2273V48.5455H68.7727V56.6364H60.6818C59.6089 56.6364 58.5799 57.0626 57.8212 57.8212C57.0626 58.5799 56.6364 59.6089 56.6364 60.6818V84.9545C56.6364 86.0275 57.0626 87.0564 57.8212 87.8151C58.5799 88.5738 59.6089 89 60.6818 89H84.9545C86.0275 89 87.0564 88.5738 87.8151 87.8151C88.5738 87.0564 89 86.0275 89 84.9545V60.6818C89 59.6089 88.5738 58.5799 87.8151 57.8212C87.0564 57.0626 86.0275 56.6364 84.9545 56.6364ZM24.2727 64.7273V80.9091H8.09091V64.7273H24.2727ZM36.4091 24.2727V8.09091H52.5909V24.2727H36.4091ZM80.9091 80.9091H64.7273V64.7273H80.9091V80.9091Z"
-                class="path"
-              />
-            </svg>
-          </div>
-          <p>Creating underlying structure needed for future development</p>
-        </div>
-        <div class="card">
-          <div class="titleContainer">
-            <h4>Development</h4>
-            <svg width="50" height="50" viewBox="0 0 89 115" fill="none">
-              <path
-                d="M85.3807 55.3591C85.4043 55.1689 85.4043 54.9767 85.3807 54.7866C80.9584 44.6055 72.592 36.492 62.0627 32.1735V11.4497H67.996C69.5696 11.4497 71.0788 10.8465 72.1915 9.77289C73.3042 8.69928 73.9293 7.24315 73.9293 5.72483C73.9293 4.20651 73.3042 2.75038 72.1915 1.67676C71.0788 0.603149 69.5696 0 67.996 0H20.5293C18.9557 0 17.4466 0.603149 16.3338 1.67676C15.2211 2.75038 14.596 4.20651 14.596 5.72483C14.596 7.24315 15.2211 8.69928 16.3338 9.77289C17.4466 10.8465 18.9557 11.4497 20.5293 11.4497H26.4627V32.1735C15.9671 36.6085 7.6841 44.8264 3.38201 55.0728C3.35838 55.263 3.35838 55.4552 3.38201 55.6453C0.584092 62.1685 -0.503578 69.2568 0.215322 76.2824C0.934222 83.308 3.43751 90.0541 7.50351 95.9235C11.5695 101.793 17.0728 106.604 23.5259 109.932C29.9791 113.259 37.1831 115 44.5 115C51.8169 115 59.0209 113.259 65.4741 109.932C71.9272 106.604 77.4305 101.793 81.4965 95.9235C85.5625 90.0541 88.0658 83.308 88.7847 76.2824C89.5036 69.2568 88.4159 62.1685 85.618 55.6453L85.3807 55.3591ZM34.2353 41.5622C35.4249 41.188 36.4614 40.4605 37.1967 39.4837C37.932 38.5069 38.3284 37.3309 38.3293 36.1237V11.4497H50.196V36.1237C50.1969 37.3309 50.5934 38.5069 51.3286 39.4837C52.0639 40.4605 53.1004 41.188 54.29 41.5622C60.2044 43.4102 65.4384 46.8697 69.3607 51.5234H19.1647C23.087 46.8697 28.3209 43.4102 34.2353 41.5622V41.5622ZM44.2627 103.047C35.6126 103.032 27.3213 99.7096 21.2047 93.808C15.0882 87.9064 11.645 79.9064 11.6293 71.5603C11.639 68.6526 12.0785 65.761 12.9347 62.9731H75.5907C76.4468 65.761 76.8864 68.6526 76.896 71.5603C76.8803 79.9064 73.4371 87.9064 67.3206 93.808C61.2041 99.7096 52.9127 103.032 44.2627 103.047V103.047ZM56.1293 80.1476C54.9558 80.1476 53.8087 80.4833 52.8329 81.1124C51.8572 81.7414 51.0967 82.6355 50.6476 83.6816C50.1986 84.7277 50.0811 85.8788 50.31 86.9893C50.5389 88.0998 51.104 89.1198 51.9338 89.9205C52.7636 90.7211 53.8208 91.2663 54.9718 91.4872C56.1228 91.7081 57.3157 91.5948 58.3999 91.1615C59.4841 90.7282 60.4108 89.9944 61.0627 89.0529C61.7147 88.1115 62.0627 87.0047 62.0627 85.8724C62.0627 84.3541 61.4375 82.8979 60.3248 81.8243C59.2121 80.7507 57.7029 80.1476 56.1293 80.1476ZM32.396 74.4227C31.2225 74.4227 30.0754 74.7585 29.0996 75.3876C28.1239 76.0166 27.3634 76.9107 26.9143 77.9568C26.4652 79.0029 26.3477 80.1539 26.5767 81.2644C26.8056 82.3749 27.3707 83.395 28.2005 84.1956C29.0303 84.9963 30.0875 85.5415 31.2385 85.7624C32.3894 85.9833 33.5824 85.8699 34.6666 85.4366C35.7508 85.0033 36.6774 84.2696 37.3294 83.3281C37.9814 82.3867 38.3293 81.2798 38.3293 80.1476C38.3293 78.6293 37.7042 77.1731 36.5915 76.0995C35.4788 75.0259 33.9696 74.4227 32.396 74.4227Z"
-                class="path"
-              />
-            </svg>
-          </div>
-          <p>Developing all the app's features and test for bugs.</p>
-        </div>
-      </div>
-      <!-- paralax heading -->
-      <h1 class="paralax" data-rate=".2" data-direction="vertical">
-        < Hello World />
-      </h1>
-    </section>
-
-    <!-- SECTION TWO -->
-
-    <div class="mainLineContainer">
-      <!-- LINE IN THE MIDDLE -->
-      <svg
-        width="2px"
-        height="100%"
-        preserveAspectRatio="xMidYMax meet"
-        viewBox="0 0 3 1102"
-        class="svg"
-      >
-        <path id="path" d="M1.5 0V1102" stroke="#17191b" stroke-width="1" />
-      </svg>
-      <section id="two">
-        <div class="sectionTwoMainContainer">
-          <h1 class="sectionTwoTittle">My Work</h1>
-          <!-- SECTION TWO PROJECTS -->
-          <div class="projectContainer">
-            <div class="projectDescription">
-              <div class="descriptionPadding">
-                <div class="container">
-                  <h3>E-Commerce</h3>
-                  <div class="block"></div>
-                </div>
-                <div class="container">
-                  <p>
-This project is made with MERN stack, its purpose was to emulate functionality of an online shop. It has fully functional cart, wishlist, filtering, sorting, authentication, adding products as an admin, etc…
-                  </p>
-                  <ul class="techStack">
-                    <li>React</li>
-                    <li>Redux</li>
-                    <li>Tailwind</li>
-                    <li>NodeJs</li>
-                    <li>JWT</li>
-                    <li>MongoDB</li>
-                  </ul>
-                  <div class="block"></div>
-                </div>
-              </div>
-              <div class="buttonPadding">
-                <a
-              target="_blank"
-              rel="noreferrer noopener"
-                href="https://github.com/moki-moki/mern-shop" class="sectionOneBtnContainer">
-                  <button class="codeBtn"><span> < Code > </span></button>
-                </a>
-                <a
-                
-              target="_blank"
-              rel="noreferrer noopener"
-                href="https://mokimoki-mern-shop.herokuapp.com/" class="sectionOneBtnContainer">
-                  <button class="demoBtn"><span> < Demo > </span></button>
-                </a>
-              </div>
-            </div>
-
-            <a
-              href="https://mokimoki-mern-shop.herokuapp.com/"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="projectImageContainer"
-            >
-              <img class="projectImage" data-lazy="./shop.png" />
-              <div class="block"></div>
-            </a>
-          </div>
-          <div class="projectContainer">
-            <div class="projectDescription">
-              <div class="descriptionPadding">
-                <div class="container">
-                  <h3>Social Media</h3>
-                  <div class="block"></div>
-                </div>
-                <div class="container">
-                  <div class="block"></div>
-                  <p>
-                    Social Media app built with MERN stack. It mimics functionality of a social media, leting you like, dislike, comment, change username, create posts, delete posts, etc...
-                  </p>
-
-                  <ul class="techStack">
-                    <li>React</li>
-                    <li>Context</li>
-                    <li>NodeJs</li>
-                    <li>MongoDB</li>
-                    <li>JWT</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="buttonPadding">
-                <a
-                 href="https://github.com/moki-moki/react-social-media"  
-                 target="_blank"
-                 rel="noreferrer noopener"
-                 class="sectionOneBtnContainer">
-                  <button class="codeBtn"><span> < Code > </span></button>
-                </a>
-                <a
-                  href="https://mokimoki-mern-social-media.herokuapp.com/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="sectionOneBtnContainer">
-                  <button class="demoBtn"><span> < Demo > </span></button>
-                </a>
-              </div>
-            </div>
-
-            <a
-              href="https://mokimoki-mern-social-media.herokuapp.com/"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="projectImageContainer"
-            >
-              <img class="projectImage" data-lazy="./social.png" />
-              <div class="block"></div>
-            </a>
-          </div>
-
-          <div class="projectContainer">
-            <div class="projectDescription">
-              <div class="descriptionPadding">
-                <div class="container">
-                  <h3>Crypto Tracker</h3>
-                  <div class="block"></div>
-                </div>
-                <div class="container">
-                  <div class="block"></div>
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Sed aut maiores necessitatibus, unde earum dignissimos enim
-                    voluptas rem voluptatum totam.
-                  </p>
-
-                  <ul class="techStack">
-                    <li>React</li>
-                    <li>CSS</li>
-                    <li>Axios</li>
-
-                </div>
-              </div>
-              <div class="buttonPadding">
-                <a 
-                  href="https://github.com/moki-moki/react-crypto-tracker"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="sectionOneBtnContainer">
-                  <button class="codeBtn"><span> < Code > </span></button>
-                </a>
-                <a
-                  href="https://dreamy-nightingale-11eba0.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="sectionOneBtnContainer">
-                  <button class="demoBtn"><span> < Demo > </span></button>
-                </a>
-              </div>
-            </div>
-
-            <a
-              href="https://dreamy-nightingale-11eba0.netlify.app/"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="projectImageContainer"
-            >
-              <img class="projectImage" data-lazy="./crypto.png" />
-              <div class="block"></div>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section id="three">
-        <h1 class="sectionTwoTittle">About</h1>
-        <div class="sectionThreeMainContainer">
-          <div class="sectionThreeText">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              voluptatibus eum architecto explicabo esse laudantium ipsam
-              quisquam nam quas, cumque reiciendis voluptatem dolores molestiae
-              harum, molestias dicta illum, accusamus saepe! Lorem, ipsum dolor
-              sit amet consectetur adipisicing elit. Quas, quo? Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Optio odit velit
-              nostrum natus doloribus at vitae quos nisi impedit necessitatibus!
-            </p>
-            <ul class="techStackContainer">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>React</li>
-              <li>NodeJS</li>
-              <li>MongoDB</li>
-            </ul>
-          </div>
-          <div class="sectionThreeImage">
-            <img
-              class="projectImage"
-              data-lazy="./pfp.jpg"
-            />
-          </div>
-        </div>
-      </section>
     </div>
+  </section>
 
-    <!-- SECTION FOUR -->
-    <section id="four">
-      <h1 class="title">Get in touch</h1>
-      <div class="sectionFourContainer">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
-          dolorem? Lorem ipsum dolor sit amet.
-        </p>
-        <div class="btnContainer">
-          <a class="sectionFourBtnWrapper" href="mailto:alexloremipsum@gmail.com">
-            <button class="mailBtn"><span> < Get in touch > </span></button>
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://github.com/moki-moki" class="sectionFourBtnWrapper">
-            <button class="btn">
-              <span
-                >Github
-                <svg width="20" height="20" viewBox="0 0 89 89" fill="none">
-                  <path
-                    d="M44.4998 0C33.9333 0.000449253 23.7116 3.85587 15.6639 10.8764C7.6161 17.897 2.26739 27.6245 0.57476 38.3185C-1.11786 49.0125 0.956054 59.9751 6.42543 69.2447C11.8948 78.5143 20.4027 85.4862 30.4269 88.9127C32.6519 89.312 33.4862 87.9432 33.4862 86.7454C33.4862 85.6619 33.4306 82.0688 33.4306 78.2477C22.25 80.3579 19.3575 75.4533 18.4675 72.8869C17.4799 70.3908 15.9144 68.1789 13.9063 66.4421C12.3488 65.5867 10.1238 63.4765 13.8506 63.4195C15.2736 63.5779 16.6385 64.0856 17.8295 64.8996C19.0205 65.7137 20.0026 66.8101 20.6925 68.096C21.3011 69.217 22.1195 70.2039 23.1008 71.0001C24.082 71.7962 25.2069 72.3861 26.4108 72.7357C27.6148 73.0854 28.8742 73.188 30.117 73.0378C31.3597 72.8875 32.5613 72.4873 33.6529 71.8601C33.8456 69.5406 34.8538 67.3719 36.4899 65.7579C26.5887 64.6173 16.2425 60.6819 16.2425 43.2303C16.18 38.6958 17.8119 34.3086 20.8037 30.9684C19.4433 27.0274 19.6025 22.7024 21.2487 18.8777C21.2487 18.8777 24.9754 17.68 33.4861 23.5543C40.7676 21.501 48.4545 21.501 55.736 23.5543C64.2465 17.623 67.9734 18.8777 67.9734 18.8777C69.6199 22.7024 69.7791 27.0274 68.4184 30.9684C71.4192 34.3029 73.0526 38.6939 72.9796 43.2303C72.9796 60.739 62.5777 64.6173 52.6766 65.7579C53.7386 66.8615 54.5565 68.1865 55.0748 69.6429C55.5931 71.0994 55.7996 72.6531 55.6804 74.1986C55.6804 80.3011 55.6247 85.2057 55.6247 86.7456C55.6247 87.9433 56.4591 89.3691 58.684 88.9128C68.6905 85.4584 77.174 78.4702 82.6201 69.1959C88.0662 59.9215 90.1204 48.9645 88.416 38.2809C86.7117 27.5972 81.3597 17.8823 73.3154 10.8703C65.2712 3.85832 55.0583 0.00563433 44.4998 0V0Z"
-                    class="path"
-                  />
-                </svg>
-              </span>
-            </button>
-          </a>
-        </div>
-      </div>
-    </section>
+  <div class="cursor">
+    <span class="cursorDot">Click</span>
+  </div>
 
-    <div class="cursor">
-      <span class="cursorDot">Click</span>
-    </div>
+  <footer>
+    <p>Designed & Developed by Aleksa</p>
+  </footer>
 
-    <footer>
-      <p>Designed & Developed by Me</p>
-    </footer>
+  <script src="index.js"></script>
+</body>
 
-    <script src="index.js"></script>
-  </body>
 </html>

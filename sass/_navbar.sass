@@ -1,0 +1,194 @@
+@use './globals/veriables'
+@use 'breakpoints'
+@use './globals/fonts'
+    
+// Hide scroll
+
+// Hides scroll for Chrome based
+::-webkit-scrollbar
+    display: none
+
+::-moz-selection
+    color: var(--text-color)
+    background: var(--secondary-color)
+
+::selection
+    color: var(--text-color)
+    background: var(--secondary-color)
+
+    
+// Loading overlay
+#overlay
+    position: fixed
+    transition: 1.3s ease top
+    width: 100vw
+    height: 101vh
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background: var(--primary-color)
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 20
+
+.p
+    stroke: var(--text-color)
+
+/* NAVBAR */
+nav
+    padding: 0 2em
+    border-bottom: 2px solid var(--text-color)
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: sticky
+    top: 0
+    background-color: var(--primary-color)
+    z-index: 10
+    transition: veriables.$transitionSpeed ease top
+
+    &::before
+        content: ''
+        height: 2px
+        width: 100%
+        background-color: var(--primary-color)
+        position: absolute
+        bottom: 0
+        left: 0
+
+.logoContainer
+    width: 80%
+    transition: veriables.$transitionSpeed ease all
+    display: flex
+
+.logo path
+    transition: veriables.$transitionSpeed ease stroke
+    stroke: var(--text-color)
+    
+
+.logoActive path
+    stroke: var(--nav-text)
+
+/* NAVBAR BOX */
+.navLineContainer
+    border-left: 2px solid var(--text-color)
+    border-right: 2px solid var(--text-color)
+    padding: 2.5em 2em
+    width: 130px 
+    display: flex
+    justify-content: center
+    position: relative
+    cursor: pointer
+    transition: veriables.$transitionSpeed ease all
+
+    // NAVBAR BOX LINES
+    span
+        position: absolute
+        display: block
+        width: 60%
+        background-color: var(--text-color)
+        height: 2px
+        transition: veriables.$transitionSpeed ease all
+
+// ACTIVE NAV
+.activeNav
+    border-left: 2px solid var(--nav-text)
+    border-right: 2px solid var(--nav-text)
+
+    span 
+       transform: translateY(0px)
+       z-index: 10
+       background-color: var(--nav-text)
+
+.line1
+    transform: translateY(-5px)
+
+.line2
+    transform: translateY(5px)
+
+// TOGGLE BTN MAIN CONTAINER
+.toggleWrapper
+    width: 10%
+
+.toggleContainer
+    width: 60px
+    height: 30px
+    border: 2px solid var(--text-color)
+    border-radius: 20px
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 2px
+    position: relative
+    cursor: pointer
+
+    .dot
+        height: 20px
+        width: 20px
+        border-radius: 50%
+        background-color: var(--text-color)
+        position: absolute
+        left: 5px
+        transition: veriables.$transitionSpeed ease transform
+
+
+.activeTheme
+    transform: translateX(calc( 100% -  -5px))
+
+.navActive
+        border-color: var(--nav-text)
+
+        .dot
+            background-color: var(--nav-text)
+
+
+/*NAVBAR LINK WRAPPER*/
+.navLinkWrapper
+    position: fixed
+    padding: 1em
+    top: 0
+    left: 0
+    font-size: 4em
+    height: 100vh
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    z-index: -1
+    clip-path: circle(0% at 95.31% 4.47%)
+    transition: veriables.$transitionSpeed ease-in-out clip-path
+    background-color: var(--nav-bg)
+
+    a 
+        display: block
+        width: 100%
+        border-bottom: 4px dotted var(--nav-text)
+
+.active
+    clip-path: circle(150% at 95.31% 4.47%)
+
+@include breakpoints.lg
+    .logoContainer
+        width: 70%
+
+    .toggleWrapper
+        width: 20%
+    
+    .navLinkWrapper
+        font-size: fonts.$headingOnePhone
+
+@include breakpoints.sm
+    nav
+        padding: 0 0.5em
+
+    .navLinkWrapper
+        padding: 0.5em
+
+@include breakpoints.xs
+    .logoContainer
+        width: 50%
+
+    .toggleWrapper
+        width: 40%
+

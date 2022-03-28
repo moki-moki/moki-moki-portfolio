@@ -73,6 +73,9 @@ const images = document.querySelectorAll(".projectImage");
 // Buttons
 const btns = document.querySelectorAll("button");
 
+// All Of the Link tags
+const aTags = document.querySelectorAll("a");
+
 /* FUNCTIONS */
 
 // Open / Close Navbar
@@ -211,18 +214,37 @@ const cursorCircle = (e) => {
 };
 
 // Crusor grow on hover
-const aTags = document.querySelectorAll("a");
 
 aTags.forEach((link) => {
   link.addEventListener("mouseover", () => {
     mouseCursor.classList.add("cursor-grow");
-    cursorText.style.scale = 1;
+    cursorText.style.transform = "scale(1)";
   });
 
   link.addEventListener("mouseleave", () => {
     mouseCursor.classList.remove("cursor-grow");
-    cursorText.style.scale = 0;
+    cursorText.style.transform = "scale(0)";
   });
+});
+
+toggleThemeBtn.addEventListener("mouseover", () => {
+  mouseCursor.classList.add("cursor-grow");
+  cursorText.style.transform = "scale(1)";
+});
+
+toggleThemeBtn.addEventListener("mouseleave", () => {
+  mouseCursor.classList.remove("cursor-grow");
+  cursorText.style.transform = "scale(0)";
+});
+
+navBtn.addEventListener("mouseover", () => {
+  mouseCursor.classList.add("cursor-grow");
+  cursorText.style.transform = "scale(1)";
+});
+
+navBtn.addEventListener("mouseleave", () => {
+  mouseCursor.classList.remove("cursor-grow");
+  cursorText.style.transform = "scale(0)";
 });
 
 /* FUNCTION CALLS */

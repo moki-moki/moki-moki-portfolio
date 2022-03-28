@@ -128,6 +128,18 @@
 .container
     position: relative
 
+.details
+
+    span
+        transition: veriables.$transitionSpeed ease color
+        color: var(--secondary-color)
+        text-decoration: underline
+        text-decoration-thickness: 2px
+
+        &:hover
+            color: var(--linkHover)
+
+
     .block
         position: absolute
         top: 0
@@ -136,6 +148,9 @@
         height: 100%
         z-index: 5
         background: var(--primary-color)
+
+
+
 
 @include breakpoints.breakpoint(410px)
     .sectionTwoMainContainer

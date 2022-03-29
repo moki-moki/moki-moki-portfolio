@@ -33,6 +33,7 @@
         flex-direction: column
         width: 40%
 
+
         .descriptionPadding
             padding: 0 1em
 
@@ -125,8 +126,18 @@
     .buttonPadding
         padding: 0 0.5em
 
+
 .container
     position: relative
+
+    .block
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: 5
+        background: var(--primary-color)
 
 .details
 
@@ -140,18 +151,6 @@
             color: var(--linkHover)
 
 
-    .block
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
-        z-index: 5
-        background: var(--primary-color)
-
-
-
-
 @include breakpoints.breakpoint(410px)
     .sectionTwoMainContainer
 
@@ -161,8 +160,6 @@
 
                 .techStack
                     grid-template-columns: repeat(2, minmax(140px, 200px))
-
-
 
 
 @keyframes showText
